@@ -26,7 +26,7 @@
 				<div class="form-group">
 					<button  type="submit" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#myModal">USER</button>
 					<button  type="submit" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#FacultyModal">FACULTY</button>
-					<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"> -->
+					<button type="button" class="btn btn-success btn-block btn-lg" data-toggle="modal" data-target="#myModal1"> SIGN UP </button>
     <!-- Open modal -->
   <!-- </button> -->
 					<button  type="submit" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#AdminModal">ADMIN</button>
@@ -37,7 +37,7 @@
 <!---------------------------------- Modal for Signup --------------------------------------------------->
 	<div class="container">
 	  <!-- Modal -->
-	  <div class="modal fade" id="MyModal" role="dialog">
+	  <div class="modal fade" id="myModal1" role="dialog">
 	    <div class="modal-dialog modal-lg modal-dialog-scrollable">
 	    
 	      <!-- Modal content-->
@@ -182,7 +182,7 @@
 	               <!--   <input type="submit" name="submit" value="submit"> -->
 	                <button type = "submit"id = "submits" name="submit"><b>Login</b></button>
 	                </form>
-	                <a href="" data-toggle="modal" data-target="#MyModal" data-dismiss="modal">Create an Account</a><br>
+	                <a href="" data-toggle="modal" data-target="#myModal1" data-dismiss="modal">Create an Account</a><br>
 	                <a href="" class="text-danger" data-toggle="modal" data-target="#forgetpasswordmodel" data-dismiss="modal">Forgot Password</a>
 	              </div>
 	          </section>

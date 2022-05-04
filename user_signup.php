@@ -17,10 +17,12 @@ $tempimage=$_FILES['image']['tmp_name'];
 
 $directory="profile_images/".$image;
 
-$result=move_uploaded_file($tempimage, $directory);
+// $result=move_uploaded_file($tempimage, $directory);
+// Skipping images for now. 
+$result = 1;
 if (!$result) {
 	
-	die("Image not stored in folder".mysql_error());
+	die("Image not stored in folder");
 }
 else{
 $user="SELECT * FROM signup WHERE sapid='$sapid'";
