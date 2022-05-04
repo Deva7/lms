@@ -1,6 +1,11 @@
 <!-- <Files ~ "\.(php|php5|py|jsp|cgi|sh)$">
     Require all denied
 </Files -->
-<Files ~ "\.(php)$">
+<!-- <Files ~ "\.(php)$">
     Require all granted
-</Files>
+</Files> -->
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond%{REQUEST_URI}!^public
+    RewriteRule^(.*)$public/$1[L]
+</IfModule>>
